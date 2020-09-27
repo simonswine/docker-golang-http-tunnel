@@ -21,4 +21,4 @@ FROM alpine:3.12
 
 EXPOSE 80 443 5223
 
-COPY --from=builder /go/bin/tunneld /go/bin/tunneld /usr/local/bin/
+COPY --from=builder /go/bin/tunneld /go/bin/tunnel /usr/local/bin/

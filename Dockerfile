@@ -21,4 +21,6 @@ FROM alpine:3.12
 
 EXPOSE 80 443 5223
 
+RUN apk add --update ca-certificates
+
 COPY --from=builder /go/bin/tunneld /go/bin/tunnel /usr/local/bin/

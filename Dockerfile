@@ -17,7 +17,7 @@ RUN cd $(go env GOPATH)/src/github.com/mmatczuk/go-http-tunnel && \
 RUN upx -5 /go/bin/tunnel
 RUN upx -5 /go/bin/tunneld
 
-FROM alpine:3.9
+FROM alpine:3.12
 
 EXPOSE 80 443 5223
 
